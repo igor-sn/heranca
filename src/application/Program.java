@@ -36,8 +36,21 @@ public class Program {
 		}
 		
 		
+		//SOBREPOSIÇÃO
 		
+		Account acc6 = new Account(1005, "Jorge", 1000.0);
+		acc6.withdraw(200.0);
+		System.out.println(acc6.getBalance());
 		
+		Account acc7= new SavingsAccount(1006, "José", 1000.0, 0.01);
+		acc7.withdraw(200.0);
+		System.out.println(acc7.getBalance());
+		
+		//Palavra Super
+		
+		Account acc8 = new BusinessAccount(1007, "Francisco", 1000.0, 500.0);
+		acc8.withdraw(200.0);
+		System.out.println(acc8.getBalance()); 
 		
 	}
 
